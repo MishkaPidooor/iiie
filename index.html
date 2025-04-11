@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мишка - пидор - пидорас!</title>
+    <title>Мишка - пидорас</title>
 </head>
 <body>
     <div class="container">
-        <h1>Мишка - Долбаеб ебанный!</h1>
+        <h1>Мишка - Ебанат отсталый</h1>
         <img src="https://placebear.com/300/300" alt="Мишка">
-        <p>Мишка живёт в пизде, любит хуй. Он немного мупой, но всегда тупой!</p>
+        <p>Мишка живёт в пизде, любит сосать хуи. Он немного пидорас, но всегда долбаёб!</p>
         <ul>
-            <li>Любит танцевать под членами</li>
-            <li>Обожает пугать членами </li>
-            <li>Мечтает открыть своего отца</li>
+            <li>Любит сосать хуи</li>
+            <li>Обожает ебать туристов</li>
+            <li>Мечтает выебать весь мир</li>
         </ul>
-        <button>Выебать Мишку!</button>
+        <button onclick="countClicks()">Выебать мишку!</button>
+        <p id="click-count" style="display: none;">Засадил Мишке: 0 раз</p>
     </div>
 
     <style>
@@ -84,6 +85,21 @@
         button:hover {
             background-color: #a0522d;
         }
+
+        #click-count {
+            color: #8b4513;
+            font-weight: bold;
+        }
     </style>
+
+    <script>
+        let clicks = 0;
+        function countClicks() {
+            clicks++;
+            const counter = document.getElementById('click-count');
+            counter.style.display = 'block';
+            counter.textContent = `Засадил Мишке: ${clicks} раз`;
+        }
+    </script>
 </body>
 </html>
